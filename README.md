@@ -5,4 +5,4 @@ This project detects American Sign Language (ASL) signs using webcam input. It a
 
 ---
 
-## 📂 Project Structure
+
