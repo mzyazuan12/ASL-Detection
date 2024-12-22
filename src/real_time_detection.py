@@ -72,14 +72,6 @@ while True:
             display_label = predicted_label.replace('_', ' ') 
             probability = predictions[0][predicted_label_index] * 100  
 
-            
-            if predicted_label == 'hello':
-                display_label = 'I Love You'
-            elif predicted_label == 'goodbye':
-                display_label = 'hello'
-            elif predicted_label == 'I_Love_You':
-                display_label = 'goodbye'
-
             if predicted_label != last_prediction:
                 async_generate_voice(display_label) 
                 last_prediction = predicted_label
